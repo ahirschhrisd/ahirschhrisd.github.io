@@ -14,5 +14,3 @@ Tina Zhou, Ariel Hirschhorn
 8. git push
 
 Then, open a pull request, approve it, and merge into main!
-
-
