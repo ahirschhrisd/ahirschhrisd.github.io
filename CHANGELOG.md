@@ -19,6 +19,23 @@ All notable changes to this project will be documented in this file.
 
 ### Security
 
+## [1.0.2] - 2024-02-29
+
+### Added
+- Ariel-1.0.2: setting up basic project structure
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.0.0] - 2024-02-29
+
 ## [1.0.1] - 2024-02-29
 
 ### Added
