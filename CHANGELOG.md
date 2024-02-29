@@ -22,7 +22,7 @@ All notable changes to this project will be documented in this file.
 ## [1.0.1] - 2024-02-29
 
 ### Added
-- Ariel-1.0.1: added in fonts
+- Ariel-1.0.1: added in fonts!
 
 ### Changed
 
