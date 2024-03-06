@@ -19,6 +19,21 @@ All notable changes to this project will be documented in this file.
 
 ### Security
 
+## [1.0.3] - 2024-03-06
+
+### Added
+- Tina-1.0.3: First pull request
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
 ## [1.0.2] - 2024-02-29
 
 ### Added
