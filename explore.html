@@ -6,11 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Explore the Collection</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/icons/color-icon.svg" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
     <main>
-        <h1>Explore section</h1>  
+
+      <!-- explore menu bar -->
+        <div class="explore-menu-bar">
+          <div class="explore-menu-R-vertical">
+            <ul class="explore-menu-top">
+              <li><button class="menu-icon"><img src="assets/images/icons/menu-icon.svg"/></button></li>
+              <li><button><a href="index.html"><img src="assets/images/icons/home-icon.svg"/></a></button></li>
+            </ul>
+            <ul class="explore-menu-bottom">
+              <li><img src="assets/images/icons/random-icon.svg"/> random</li>
+              <li><img src="assets/images/icons/collection-icon.svg"/> theme</li>
+              <li><img src="assets/images/icons/color-icon.svg"/> color</li>
+              <li><img src="assets/images/icons/motif-icon.svg"/> motif</li>
+              <li><img src="assets/images/icons/technique-icon.svg"/> technique</li>
+            </ul>
+          </div>
+          
+          <div class="explore-menu-L-vertical">
+          </div>
+          
+        </div>
+
+        <!-- main menu -->
+        <div class="main-menu">
+          <div class="main-menu-L">
+          <h2>
+            The Life <br> of Wallpaper
+          </h2>
+          <ul>
+            <li><button><a href="index.html"><img src="assets/images/icons/home-icon-2.svg"/></a></button><span class="main-menu-header">Home</span></li>
+            <li><button><img src="assets/images/icons/search-icon.svg"/></button><span class="main-menu-header">Search</span></li>
+          </ul>
+          <hr>
+          <ul>
+            <li><button><a href="explore.html"><img src="assets/images/icons/collection-icon.svg"/></a></button><span class="main-menu-header">Explore</span><br>
+              The Catalogue</li>
+            <li><button><img src="assets/images/icons/watch-icon.svg"/></button><span class="main-menu-header">Watch</span><br>
+              The Making of Wallpaper</li>
+              <li><button><img src="assets/images/icons/read-icon.svg"/></button><span class="main-menu-header">Read</span><br>
+                Essays on Wallpaper</li>
+          </ul>
+        </div>
+        <div class="main-menu-R">
+          <ul>
+          <li><button class="menu-icon"><img src="assets/images/icons/menu-icon-2.svg"/></button></li>
+          <li><button><a href="index.html"><img src="assets/images/icons/home-icon-2.svg" width="21px"/></a></button></li>
+          <li><button class="explore-arrow-icon"><img src="assets/images/icons/arrow-DL-icon.svg" width="15px"/></button></li>
+        </ul>
+        </div>
+      </div>
+
+<!-- gallery -->
+        <img src="assets/images/explore-placeholder.png" style="width: 100vw;"/>
+
+        <!-- The Modal -->
+<div id="browse-colelction-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>The<br>Collection</h1>
+    <p>The RISD Museum contains one of the most significant collections of French 18th and 19th century wallpapers in the United States with approximately 500 wallpaper panels, borders, fragments, and design drawings. 
+<br><br>
+      Here, you can browse the wallpapers by their collections, colors, motifs, or time periods.</p>
+
+      <p><span class="cta">explore now </span>   →</p>
+  </div>
+</div>
     </main>
 	<script src="index.js"></script>
   </body>

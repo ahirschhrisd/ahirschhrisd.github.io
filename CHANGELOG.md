@@ -22,6 +22,20 @@ All notable changes to this project will be documented in this file.
 ## [1.0.3] - 2024-03-06
 
 ### Added
+- Tina-1.0.4: Added home and explore page
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+
+### Added
 - Tina-1.0.3: First pull request
 
 ### Changed
@@ -80,7 +94,6 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 ### Security
-
 
 
 
