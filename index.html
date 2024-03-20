@@ -7,20 +7,49 @@
     <title>My Website</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+
+    </style>
   </head>
   <body>
+    <div id="homepage">
     <main>
-        <h1>The Life of Wallpapers</h1>
-        <a href="read.html" target="_blank">
-          <h1>Read an essay</h1>
-      </a> 
-      <a href="explore.html" target="_blank">
-        <h1>Explore</h1>
-    </a>  
-        <a href="watch.html" target="_blank">
-          <h1>Watch</h1>
-      </a> 
+      <div id="hero-container">
+        <h1>The Life <br> of Wallpapers</h1>
+      </div>
+        <!-- ============ menu ============ -->
+        <div id="home-menu">
+        <div id="home-menu-top"></div>
+        <div id="home-menu-bottom">
+          <a href="read.html">
+            <h2>Read</h2>
+            <h3>Essays on the Collection</h3>
+        </a> 
+        <a href="explore.html">
+          <h2>Explore</h2>
+          <h3>The Collection</h3>
+      </a>  
+          <a href="watch.html">
+            <h2>Watch</h2>
+            <h3>The Making of Wallpaper</h3>
+        </a> 
+        </div>
+      </div>
+  
+      <!-- ============ essays ============ -->
+      <div id="home-essay-section">
+        <div id="home-essay-container">
+          <p class="home-essay-pullquotes">
+            Although early forms of wallpaper were printed in Europe beginning in the mid-1500s, the existence of wallpapers in museum collections is rare.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet, dui quis maximus pharetra, sem neque volutpat turpis, vitae maximus felis quam non urna. Praesent eget mauris vitae enim viverra blandit a quis turpis. Donec a nisi egestas erat rhoncus ornare. Pellentesque imperdiet, nulla ac auctor feugiat, metus erat volutpat enim, vel varius ex leo id tellus. In id nibh in urna euismod sollicitudin. In non lobortis urna. Quisque lectus quam, dapibus a consectetur at, fringilla eget nibh. Vestibulum dapibus eget arcu a venenatis. Praesent pulvinar rutrum rhoncus. Maecenas lorem ex, ullamcorper eu diam sit amet, auctor fringilla arcu. Nullam et diam elementum, cursus neque ut, pulvinar diam. Vivamus in leo tincidunt, sollicitudin elit sit amet, laoreet dolor. Etiam velit metus, euismod ac velit a, eleifend pharetra magna. Vivamus in urna sed magna vulputate condimentum in ac dolor. Nam a risus aliquam, vulputate dui ac, lobortis urna. Phasellus eleifend risus ut elit egestas imperdiet.
+          </p>
+      </div>
+    </div>
     </main>
 	<script src="index.js"></script>
+</div>
   </body>
 </html>
