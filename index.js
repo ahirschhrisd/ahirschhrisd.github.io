@@ -1,22 +1,37 @@
-// var coll = document.getElementById("collapsible");
-// var i;
 
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//     } else {
-//       content.style.display = "block";
-//     }
-//   });
-// }
 
 $('.menu-icon').click(function(){
-  $('.main-menu').animate({width: 'toggle'});
+  $('.main-menu').toggle();
 });
 
 $('.explore-arrow-icon').click(function(){
-  $('.main-menu').animate({width: 'toggle'});
+  $('.main-menu').toggle();
 });
+
+// $('.artwork-arrow-icon').click(function(){
+//   $('.artwork-menu-L').toggle();
+// });
+
+
+
+// modal
+var modal1 = document.getElementById("browse-colelction-modal");
+// Get the <span> element that closes the modal
+var cta = document.getElementsByClassName("cta")[0];
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal1.style.display = "none";
+}
+
+cta.onclick = function() {
+  modal1.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
