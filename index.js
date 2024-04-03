@@ -8,9 +8,6 @@ $('.explore-arrow-icon').click(function(){
   $('.main-menu').toggle();
 });
 
-// $('.artwork-arrow-icon').click(function(){
-//   $('.artwork-menu-L').toggle();
-// });
 
 
 
