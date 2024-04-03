@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
-
+- Tina-1.0.5: Sketch of explore page, artwork page, collections page
 ### Changed
 
 ### Deprecated
