@@ -7,6 +7,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.7] - 2024-04-10
+### Added
+- Tina-1.0.7: Added horizontical and vertical artwork pages w tombstones, added catalogue menu
+
 ## [1.0.6] - 2024-04-03
 
 ### Added 
