@@ -203,7 +203,7 @@ body {
     justify-content: space-between;
     margin-left: 20px;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 .explore-menu-bottom {
@@ -211,7 +211,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 100px;
     width: 100%;
 }
 
