@@ -26,7 +26,7 @@
           <li><button class="menu-icon"><img src="assets/images/icons/menu-icon-2.svg" /></button></li>
           <li><button><a href="index.html"><img src="assets/images/icons/home-icon-2.svg" width="21px" /></a></button>
           </li>
-          <li><button class="tombstone-expand-icon"><img src="assets/images/icons/arrow-expand-icon.svg"
+          <li><button class="tombstone-expand-icon"><img src="assets/images/icons/arrow-DL-icon.svg"
                 width="15px" /></button></li>
           <li><button class="artwork-dice-icon"><img src="assets/images/icons/dice-icon.svg" width="21px" /></button>
           </li>
@@ -45,67 +45,39 @@
     </div>
 
     <!-- FULL tombstone menu bar -->
-    <div class="artwork-menu">
-      <div class="artwork-menu-L">
-        <button><span class="cta"><span class="cta-arrow">←</span> back</span></button>
-        <div class="tombstone-container-vertical">
-          <div class="tombstone-top">
-            <p>
+    <div class="artwork-tombstone-horizontal">
+      <div class="artwork-tombstone-h-container">
+        <div class="artwork-tombstone-horizontal-column tombstone-col-1">
+          <div class="tombstone-chunk">
             <div class="maker-primary">
-              <span class="maker-name">François Louis Prieur</span>, designer
+              In the style of <br>
+              <span class="maker-name">Charles-André (Carle) van Loo</span>
             </div>
-            <div class="maker-secondary">
-              French, active 1780–1800
-            </div>
-            </p>
-            <p>
-            <div class="maker-primary">
-              <span class="maker-name">Jean-Baptiste Réveillon</span>, manufacturer
-            </div>
-            <div class="maker-secondary">
-              Paris, France; 1725–1811
-            </div>
-            </p>
-            <p class="artwork-primary">
-              <span class="artwork-title">Arabesque Wallpaper</span>, ca. 1780
-            </p>
+            <div class="maker-secondary">French, 1705–1765</div>
           </div>
-
-          <div class="tombstone-bottom">
-            <p class="artwork-info-secondary">
-              Woodblock print on paper<br>
-              114.5 x 56 cm (45 1/16 x 22 1/16 in.)<br>
-              Mary B. Jackson Fund 34.880
-            </p>
+          <div class="tombstone-chunk">
+            <div class="maker-primary">
+              <span class="maker-name">Dufour et Leroy</span>, manufacturer
+            </div>
+            <div class="maker-secondary">Paris, France; 1823–1836</div>
           </div>
         </div>
-      </div>
-      <div class="artwork-menu-R">
-        <ul class="artwork-menu-top">
-          <li><button class="menu-icon" onclick="hideOpenTombstone()"><img
-                src="assets/images/icons/menu-icon-2.svg" /></button></li>
-          <li><button><a href="index.html"><img src="assets/images/icons/home-icon-2.svg" width="21px" /></a></button>
-          </li>
-          <li><button class="tombstone-hide-icon"><img src="assets/images/icons/arrow-DL-icon.svg"
-                width="15px" /></button></li>
-          <li><button class="artwork-dice-icon"><img src="assets/images/icons/dice-icon.svg" width="21px" /></button>
-          </li>
-        </ul>
-        <ul class="artwork-menu-bottom">
-          <li>
-            <span class="nav-arrows">←</span> Prev
-          </li>
-          <li>
-            next <span class="nav-arrows">→</span>
-          </li>
-        </ul>
-      </div>
+        <div class="artwork-primary artwork-tombstone-horizontal-column tombstone-col-2">
 
+          <span class="artwork-title">Wallpaper Scene in Grisaille</span>, ca. 1780
+
+        </div>
+        <div class="artwork-info-secondary artwork-tombstone-horizontal-column tombstone-col-3">
+
+          Woodblock print on paper <br>
+          69.2 x 111.1 cm
+          (27 1/4 x 43 3/4 in.)<br>
+          Mary B. Jackson Fund 34.916
+
+        </div>
+      </div>
     </div>
 
-
-
-    </div>
 
     <!-- main menu -->
     <div class="main-menu">
@@ -179,17 +151,17 @@
     </div>
 
     <!-- image -->
-    <img src="assets/images/RISDM-34-910.jpg" style="width: 100vw; position: absolute;top: 0;" />
+    <img src="assets/images/RISDM-34-916.jpg" style="width: 100vw; position: absolute;top: 0;" />
 
   </main>
   <script src="index.js"></script>
   <script>
     $('.tombstone-hide-icon').click(function () {
-      $('.artwork-menu').toggle();
+      $('.artwork-tombstone-horizontal').toggle();
     });
 
     $('.tombstone-expand-icon').click(function () {
-      $('.artwork-menu').toggle();
+      $('.artwork-tombstone-horizontal').toggle();
     });
 
     $('.menu-icon').click(function () {
