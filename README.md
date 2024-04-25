@@ -12,6 +12,9 @@ Before making significant changes:
 4. git checkout -b [yourname]-[releaseno]
 5. git add -p
 6. git status
+
+enter messge at top --> "esc" --> ":wq" at bottom --> enter
+
 7. git commit
 8. git push
 

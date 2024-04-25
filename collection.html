@@ -14,10 +14,10 @@
 <body>
   <main>
 
-    <!-- explore menu bar -->
+    <!-- SHORT catalogue menu -->
 
-    <div class="collection-menu">
-      <div class="collection-menu-L">
+    <div class="catalogue-menu">
+      <div class="catalogue-menu-L">
         <ul>
           <li>
             <hr>
@@ -57,16 +57,16 @@
           </li>
         </ul>
       </div>
-      <div class="collection-menu-R">
-        <ul class="collection-menu-top">
+      <div class="catalogue-menu-R">
+        <ul class="catalogue-menu-top">
           <li><button class="menu-icon"><img src="assets/images/icons/menu-icon-2.svg" /></button></li>
           <li><button><a href="index.html"><img src="assets/images/icons/home-icon-2.svg" width="21px" /></a></button>
           </li>
-          <li><button class="explore-arrow-icon"><img src="assets/images/icons/arrow-DL-icon.svg"
+          <li><button class="catalogue-hide-icon"><img src="assets/images/icons/arrow-expand-icon.svg"
                 width="15px" /></button>
           </li>
         </ul>
-        <ul class="collection-menu-bottom">
+        <ul class="catalogue-menu-bottom">
           <li>01</li>
           <li>02</li>
           <li>03</li>
@@ -158,8 +158,148 @@
     <!-- gallery -->
     <img src="assets/images/explore-placeholder-random.png" style="width: 100vw;" />
 
+    <!--FULL catalogue menu -->
+    <div class="catalogue-menu-full">
+      <div class="catalogue-menu-full-L">
+        <button><span class="cta"><span class="cta-arrow">←</span> back</span></button>
+        <div class="tombstone-container-vertical">
+          <p>
+          <div class="catalogue-number-p">
+            01
+          </div>
+          <div class="catalogue-title">
+            Domino and Early Wallpapers
+          </div>
+
+          <p>
+            The earliest works in the Huard Collection are dominos (papier dominoté)—square papers that could be pasted
+            together to form a cohesive pattern on a wall. Production of printed papers began in the late sixteenth
+            century, however they may not have been popular for covering walls until the eighteenth century. Papers
+            typically featured geometric or floral patterns that were drawn from textile design. These patterns were
+            printed in a single color or the outline of a design was printed in black ink and colored by hand. Domino
+            papers were not made solely for walls but rather for a multiplicity of uses, including covering books and
+            lining drawers.
+            <br><br>
+            In the mid-eighteenth century, when single sheets of paper were seamed together to create a continuous
+            surface, designs expanded into repeating motifs with multiple color printings, each requiring a separate
+            woodblock. In some cases the printing was done without the application of a ground color, instead utilizing
+            the natural color of the paper as the background. Early wallpaper pigments tend to be thinner and more akin
+            to ink than paint, as evidenced by the translucent nature of the colors. By the mid-1700s, distemper paints,
+            made with a base of water and animal glue into which pigments were added, became more widely used. These
+            paints are characterized by their thick, opaque appearance. The range of colors in early wallpapers was
+            limited until the invention of more vibrant paints, most notably created with the addition of arsenic,
+            developed in 1775 by chemist Carl Wilhelm Scheele (1742–1786).
+
+          </p>
+
+          <p class="catalogue-name-bottom">
+            <span class="cta">Next collection:</span>
+            <br>Repeating Patterns <span class="nav-arrows">→</span>
+          </p>
+
+        </div>
+      </div>
+      <div class="catalogue-menu-full-R">
+        <ul class="catalogue-menu-top">
+          <li><button class="menu-icon" onclick="hideOpenCatalogue()"><img
+                src="assets/images/icons/menu-icon-2.svg" /></button></li>
+          <li><button><a href="index.html"><img src="assets/images/icons/home-icon-2.svg" width="21px" /></a></button>
+          </li>
+          <li><button class="catalogue-hide-icon"><img src="assets/images/icons/arrow-DL-icon.svg"
+                width="15px" /></button>
+          </li>
+        </ul>
+        <ul class="catalogue-menu-bottom">
+          <li>01</li>
+          <li>02</li>
+          <li>03</li>
+          <li>04</li>
+          <li>05</li>
+          <li>06</li>
+          <li>07</li>
+          <li>08</li>
+          <li>09</li>
+          <li>10</li>
+          <li>11</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <!-- main menu -->
+    <div class="main-menu">
+      <div class="main-menu-L">
+        <h2>The Life <br> of Wallpaper</h2>
+        <ul>
+          <li><button><a href="index.html">
+                <div class="menu-float-container">
+                  <div class="menu-float-L">
+                    <img src="assets/images/icons/home-icon-2.svg" />
+                  </div>
+                  <div class="menu-float-R">
+                    <span class="main-menu-header">Home</span>
+                  </div>
+                </div>
+              </a></button></li>
+        </ul>
+        <hr>
+        <ul>
+          <li>
+            <button><a href="explore.html">
+                <div class="menu-float-container">
+                  <div class="menu-float-L">
+                    <img src="assets/images/icons/collection-icon.svg" />
+                  </div>
+                  <div class="menu-float-R">
+                    <span class="main-menu-header">Explore</span>
+                    <br>The Catalogue
+                  </div>
+                </div>
+              </a></button>
+          </li>
+          <li>
+            <button><a href="explore.html">
+                <div class="menu-float-container">
+                  <div class="menu-float-L">
+                    <img src="assets/images/icons/watch-icon.svg" />
+                  </div>
+                  <div class="menu-float-R">
+                    <span class="main-menu-header">Watch</span>
+                    <br>The Making of Wallpaper
+                  </div>
+                </div>
+              </a></button>
+          </li>
+          <li>
+            <button><a href="explore.html">
+                <div class="menu-float-container">
+                  <div class="menu-float-L">
+                    <img src="assets/images/icons/read-icon.svg" />
+                  </div>
+                  <div class="menu-float-R">
+                    <span class="main-menu-header">Read</span>
+                    <br>Essays on Wallpaper
+                  </div>
+                </div>
+              </a></button>
+          </li>
+        </ul>
+      </div>
+      <div class="main-menu-R">
+        <ul>
+          <li><button class="menu-icon"><img src="assets/images/icons/menu-icon-2.svg" /></button></li>
+          <li><button><a href="index.html"><img src="assets/images/icons/home-icon-2.svg" width="21px" /></a></button>
+          </li>
+          <li><button class="explore-arrow-icon"><img src="assets/images/icons/arrow-DL-icon.svg"
+                width="15px" /></button></li>
+        </ul>
+      </div>
+    </div>
+
+
     <!-- The Modal -->
-    <div id="browse-colelction-modal" class="modal">
+    <div id="catalogue-modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <h1>The<br>Catalogue</h1>
@@ -176,6 +316,50 @@
     </div>
   </main>
   <script src="index.js"></script>
+  <script>
+
+    // main menu toggle hide/expand
+    $('.menu-icon').click(function () {
+      $('.main-menu').toggle();
+    });
+
+    $('.explore-arrow-icon').click(function () {
+      $('.main-menu').toggle();
+    });
+
+    $('.catalogue-hide-icon').click(function () {
+      $('.catalogue-menu-full').toggle();
+    });
+
+    // close catalogue menu to open main menu
+    function hideOpenCatalogue() {
+      var tombstoneMenu = document.getElementsByClassName("catalogue-menu-full")[0];
+      if (tombstoneMenu.style.display != "none") {
+        tombstoneMenu.style.display = "none";
+      }
+    }
+
+    // modal
+    var modal2 = document.getElementById("catalogue-modal");
+    // Get the <span> element that closes the modal
+    var cta = document.getElementsByClassName("cta")[0];
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal2.style.display = "none";
+    }
+
+    cta.onclick = function () {
+      modal2.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>
