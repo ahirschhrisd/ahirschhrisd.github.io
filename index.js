@@ -19,19 +19,62 @@ var json = [{ "tombstone": "French\nFlocked Wallpaper Border, ca. 1820\nWoodbloc
 // randomize - comment out to test color feature
 // json.sort(() => Math.random() - 0.5)
 
-var container = document.getElementById('container');
+document.addEventListener("DOMContentLoaded", function() {
+var page = document.getElementById('page')
+var container = document.getElementById('grid');
+var index = 0;
 
 // Get all div elements inside the container
 var divsInsideContainer = container.querySelectorAll('div');
-var index = 0;
-// Loop through the divs and do something with them
-divsInsideContainer.forEach(function (div) {
-  div.style.backgroundImage = 'url' + '(' + json[index].small_embed + ')';
+divsInsideContainer.forEach(function(div) {
+  div.style.backgroundImage= 'url' + '(' + json[index].pp_embed + ')';
   index++;
 });
 
-// main menu toggle hide/expand
-$('.menu-icon').click(function () {
+
+function cloneItemsOnScroll() {
+  const scrollPosition = window.scrollY || window.pageYOffset;
+  const windowHeight = window.innerHeight;
+
+  // Clone and append items if user has scrolled to the bottom of the container
+  if (scrollPosition + windowHeight >= container.offsetHeight) {
+    const clonedItem = container.cloneNode(true);
+    divs = clonedItem.querySelectorAll('div');
+    page.appendChild(clonedItem);
+    divs.forEach(item => {
+      item.style.backgroundImage= 'url' + '(' + json[index].pp_embed + ')';
+      index++;
+    });
+
+
+    
+
+  }
+}
+
+// Throttle the scroll event to improve performance
+let throttleTimer;
+function throttle(callback, time) {
+  if (throttleTimer) return;
+  throttleTimer = true;
+  setTimeout(() => {
+      callback();
+      throttleTimer = false;
+  }, time);
+}
+
+// Add event listener to window scroll
+window.addEventListener("scroll", () => {
+  if (index >= json.length) {
+    index = 0;
+  }
+  throttle(cloneItemsOnScroll, 200); // Adjust throttle time (ms) as needed
+});
+
+
+// Loop through the divs and do something with them
+
+$('.menu-icon').click(function(){
   $('.main-menu').toggle();
 });
 
@@ -68,6 +111,8 @@ window.onclick = function (event) {
   }
 }
 
+});
+
 // modal on catalogue page
 var modal2 = document.getElementById("catalogue-modal");
 
@@ -85,3 +130,4 @@ window.onclick = function (event) {
     modal2.style.display = "none";
   }
 }
+});

@@ -7,12 +7,14 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+
 ## [1.0.8] - 2024-04-10
 ### Added
 - Tina-1.0.8: Edited explore menu to "random, pattern, color"
 
 ## [1.0.7] - 2024-04-10
 ### Added
+- Ariel-1.0.7: infinite scroll, fixed tiling
 - Tina-1.0.7: Added horizontical and vertical artwork pages w tombstones, added catalogue menu
 
 ## [1.0.6] - 2024-04-03
