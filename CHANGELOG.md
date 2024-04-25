@@ -7,7 +7,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-## [1.0.6] - 2024-04-03
+## [1.0.7] - 2024-04-25
+
+### Added 
+-Ariel-1.0.6: infinite scroll, fixed tiling
 
 ### Added 
 -Ariel-1.0.6: added files sorted by color, lower res, changed page structure so Tina's menu appears
