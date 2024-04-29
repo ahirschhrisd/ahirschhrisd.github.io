@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 
+## [1.0.9] - 2024-04-29
+### Added
+- Ariel 1.0.9: Added deep zoom to work-vert.html and scroller on next button prototype.
+
 ## [1.0.8] - 2024-04-10
 ### Added
 - Tina-1.0.8: Edited explore menu to "random, pattern, color"
