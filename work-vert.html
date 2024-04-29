@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="assets/images/icons/color-icon.svg" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+  <script src="https://b.micr.io/micrio-4.1.min.js"></script>
   <style>
     body {
       background-color: #FF7511;
@@ -67,15 +67,12 @@
             </div>
             </p>
             <p class="artwork-primary">
-              <span class="artwork-title">Arabesque Wallpaper</span>, ca. 1780
+              <span class="artwork-title" id = "title"></span><span class="artwork-date" id = "date"> </span>
             </p>
           </div>
 
           <div class="tombstone-bottom">
-            <p class="artwork-info-secondary">
-              Woodblock print on paper<br>
-              114.5 x 56 cm (45 1/16 x 22 1/16 in.)<br>
-              Mary B. Jackson Fund 34.880
+            <p class="artwork-info-secondary" id = "tomb">
             </p>
           </div>
         </div>
@@ -92,11 +89,11 @@
           </li>
         </ul>
         <ul class="artwork-menu-bottom">
-          <li>
+          <li id = "back">
             <span class="nav-arrows">←</span> Prev
           </li>
-          <li>
-            next <span class="nav-arrows">→</span>
+          <li id = "fwd">
+            next <span class="nav-arrows" >→</span>
           </li>
         </ul>
       </div>
@@ -179,10 +176,12 @@
     </div>
 
     <!-- image -->
-    <img src="assets/images/RISDM-34-910.jpg" style="width: 100vw; position: absolute;top: 0;" />
+    <micr-io logo = "false" style="width: 100vw; position: absolute;top: 0;"></micr-io>
+    
 
   </main>
   <script src="index.js"></script>
+  <script src="gallery.js"></script>
   <script>
     $('.tombstone-hide-icon').click(function () {
       $('.artwork-menu').toggle();
