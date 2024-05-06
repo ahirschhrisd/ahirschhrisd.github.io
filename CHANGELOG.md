@@ -7,6 +7,9 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.1.0] - 2024-05-06
+### Added
+- Ariel 1.1.0: navigation somewhat working - makers still buggy
 
 ## [1.0.9] - 2024-04-29
 ### Added
