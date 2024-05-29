@@ -7,6 +7,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+
+## [1.0.9] - 2024-04-24
+### Added
+- Tina-1.0.9: testing new home page with p5
+
 ## [1.1.0] - 2024-05-06
 ### Added
 - Ariel 1.1.0: navigation somewhat working - makers still buggy
@@ -14,6 +19,7 @@ All notable changes to this project will be documented in this file.
 ## [1.0.9] - 2024-04-29
 ### Added
 - Ariel 1.0.9: Added deep zoom to work-vert.html and scroller on next button prototype.
+
 
 ## [1.0.8] - 2024-04-10
 ### Added

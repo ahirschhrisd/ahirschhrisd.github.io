@@ -133,3 +133,22 @@ window.onclick = function (event) {
     modal2.style.display = "none";
   }
 }
+
+
+// mobile exlpore menu
+$('.explore-menu-mobile').click(function () {
+  $('.explore-menu-mobile-exp').toggle();
+});
+
+$('.menu-icon-mobile').click(function () {
+  $('.main-menu-mobile-dropdown').toggle();
+});
+
+$('.artwork-exp-icon').click(function () {
+  $('.artwork-menu-mobile-exp').toggle();
+});
+
+// $('.explore-menu-mobile-exp').click(function () {
+//   $('.explore-menu-mobile-col').toggle();
+// });
+
