@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/p5.js"></script>
+  <style>
+    #hero-container h1 {
+      font-family: 'GT-Alpina-Bold';
+      text-align: left;
+      font-size: 8rem;
+      line-height: .9;
+      padding-top: 30px;
+    }
+
+    #hero-container h2 {
+      font-family: 'GT-Alpina-Fine-Medium';
+      text-transform: none;
+      color: #FFF1CE;
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 1;
+      text-align: left;
+      justify-self: self-end;
+      padding-bottom: 30px;
+    }
+
+    #hero-container {
+      background-image: url(assets/images/hero/RISDM\ 34-1113.jpg);
+      -webkit-user-select: none;
+      /* Safari */
+      -ms-user-select: none;
+      /* IE 10 and IE 11 */
+      user-select: none;
+      /* Standard syntax */
+    }
+
+    #hero-title-container {
+      display: flex;
+      flex-direction: column;
+      margin-left: 40%;
+      height: 100vh;
+      justify-content: space-between;
+    }
+
+    #h2-italics {
+      font-family: 'GT-Alpina-Fine-Medium-Italic';
+    }
+  </style>
+</head>
+
+<body>
+  <div id="homepage">
+    <main>
+      <div id="hero-container">
+        <div id="hero-title-container">
+          <h1>The<br>Life of<br>Wallpapers</h1>
+          <h2>The Huard Collection<br><span id="h2-italics">at the RISD Museum</span></h2>
+        </div>
+      </div>
+      <!-- ============ menu ============ -->
+      <div id="home-menu">
+        <div id="home-menu-top"></div>
+        <div id="home-menu-bottom">
+          <a href="read.html">
+            <h2>Read</h2>
+            <h3>Essays on the Collection</h3>
+          </a>
+          <a href="explore.html">
+            <h2>Explore</h2>
+            <h3>The Collection</h3>
+          </a>
+          <a href="watch.html">
+            <h2>Watch</h2>
+            <h3>The Making of Wallpaper</h3>
+          </a>
+        </div>
+      </div>
+
+      ============ essays ============
+      <div id="home-essay-section">
+        <div id="home-essay-container">
+
+          <div class="essay-row-top">
+            <div class="essay-col-top" id="essay-toc">
+              <ul>
+                <li style="font-weight: 700;">Essays</li>
+                <br>
+                <li>Introduction to Wallpaper</li>
+                <hr>
+                <li>About the Huards</li>
+                <hr>
+                <li>Conservation and the Huard Collection: Preserving the Processes of Making</li>
+                <hr>
+                <li>Comparing Wallpapers</li>
+              </ul>
+            </div>
+            <div class="essay-col-top essay-col-top-2">
+              <p class="essay-title">Conservation and the Huard Collection: <span style="font-family: GT-Alpina-Bold-Italic;">Preserving the Processes of Making</span></p>
+              <p class="essay-intro">
+                <span class="essay-credit">Written by <span class="credit-name">Briana Turner</span></span><br><br>
+                The collection of decorative arts and design at the RISD Museum includes not only wallpaper from the
+                illustrious Charles and Frances Wilson Huard Collection, but also works that demonstrate their process
+                of design, including printing blocks, drawings, and oil transparencies.
+              </p>
+            </div>
+          </div>
+          <section>
+            <div class="essay-row-body">
+              <div class="essay-col-body essay-col-body-1">
+                <p class="essay-notes">
+                  1 → The ideal temperature is 55 to 75 degrees Fahrenheit, and the ideal relative humidity is 30 to 55
+                  percent. “Preventing and Responding to Mold in Book and Paper Collections,” Webinar through Northeast
+                  Document Conservation Center, August 8, 2023.
+                </p>
+                <p class="essay-notes">
+                  2 → “Code of Ethics,” American Institute for Conservation,
+                  <a href="https://www.culturalheritage.org/about-conservation/code-of-ethics" target="_blank">https://www.culturalheritage.org/about-conservation/code-of-ethics</a>.
+                </p>
+                <p class="essay-notes">
+                  3 → “Agents of Deterioration,” Canadian Conservation Institute,
+                  <a href="https://www.canada.ca/en/conservation-institute/services/agents-deterioration.html" target="_blank">https://www.canada.ca/en/conservation-institute/services/agents-deterioration.html</a>.
+                </p>
+
+              </div>
+              <div class="essay-col-body essay-col-body-2">
+                <p>
+                  Having multiple components of this process in a collection is unique, and it allows us to learn more
+                  about the production of wallpaper, see instances of the artisans’ hands, and visualize the history and
+                  life cycles of these works.
+                  <br><br>
+                  To preserve the Huard Collection, we have to understand how to care for the materials that the artists
+                  and craftspeople used. Each material has specific requirements to preserve its structural integrity,
+                  and in turn to maintain that object’s intangible cultural heritage. Overall, the best way to do this
+                  is to house works in a storage environment that is clean and temperature and humidity
+                  controlled.<sup>1</sup> This preventative maintenance is considered the best practice for works on
+                  paper.
+                  <br><br>
+                  In conserving an object, our first and foremost guiding principle is that we do no harm as we mitigate
+                  potential damage.<sup>2</sup> Specifically, we try to prevent the agents of deterioration. While we
+                  cannot always stop the decay of materials, we can slow down the process of decomposition, which
+                  happens by way of physical force (abrasions, scratches, etc), pests, pollutants, high temperature and
+                  humidity levels, exposure to light, neglect, and inherent vice.<sup>3</sup> In addition to recognizing
+                  these agents, we offer treatments that are reversible and compatible with the objects’
+                  characteristics.
+                </p>
+
+                <figure>
+                  <img src="assets/Essay/Bri/RISDM 34-1129.png" style="width:100%" />
+                  <figcaption>
+                    <span class="figcap-title"><span class="figcap-bold">Design for a Wallpaper Border</span>,
+                      1805</span><br>
+                    Gouache and graphite on paper<br>
+                    French<br>34.1129
+                  </figcaption>
+                </figure>
+          </section>
+
+          <section>
+            <div class="essay-row-body">
+              <div class="essay-col-body essay-col-body-1">
+                <p class="essay-notes">
+                  4 → Rutherford Gettens and George Stout, Painting Materials: A Short Encyclopedia (New York: Dover
+                  Publications, 1966), 16.
+                </p>
+                <p class="essay-notes">
+                  5 → Emily Banas, during a tour with conservators from Studio TKM Associates, RISD Museum, August 26,
+                  2023.
+                </p>
+              </div>
+              <div class="essay-col-body essay-col-body-2">
+                <p>
+                  One of the first steps French wallpaper designers employed was the creation of design drawings.
+                  Artists rendered their initial ideas in graphite. Graphite is made up of pure carbon bound by clay and
+                  fired at a high temperature.<sup>4</sup> This mineral has a layered structure and is slick and light,
+                  which makes it sensitive to abrasion and smudging. Artists would then sometimes add color by applying
+                  opaque watercolor, watercolor, gouache, or tempera to the paper. By using color in their design
+                  drawings, the artists were able to experiment with various colorways, shading, and levels of
+                  opacity.<sup>5</sup>
+                  <br><br>
+                  As for the design drawings that utilize color, opaque watercolor, watercolor, and tempera paints are
+                  each made up of different materials, contributing to their differences in opacity and textures.
+                  Knowing their vulnerabilities helps us understand how long pieces containing these materials can be
+                  exhibited and exposed to light without doing too much damage. Each type of paint uses pigments mixed
+                  in a medium, which aids in flow and helps adhere the colors to the support, or the material on which
+                  the paint sits—in this case paper.
+                </p>
+                <figcaption>↱ The deterioration of the paper surface is evident under magnification.</figcaption>
+            <figure>
+              <img src="assets/Essay/Bri/Turner-fig2_34.940-det.jpg"
+                onmouseover="this.src='assets/Essay/Bri/Turner-fig3_34.940-magnification.jpg';"
+                onmouseout="this.src='assets/Essay/Bri/Turner-fig2_34.940-det.jpg';" style="width:100%" />
+              <figcaption>
+                <span class="figcap-title"><span class="figcap-bold">Flowers and Garlands Wallpaper</span>,
+                  ca. 1780–1790</span><br>
+                Woodblock print on paper<br>
+                French<br>34.940
+              </figcaption>
+            </figure>
+              </div>
+            </div>
+          </section>
+          
+          <section>
+            <img src="assets/Essay/Bri/RISDM 34-1173.jpg" width="100%" />
+          </section>
+          <section>
+            <div class="essay-row-body">
+              <div class="essay-col-body essay-col-body-1">
+                <figcaption>
+                  <span class="figcap-title"><span class="figcap-bold">Design for Wallpaper Border</span>,
+                    1830</span><br>
+                  Gouache and graphite on paper<br>
+                  French<br>34.1173
+                </figcaption>
+                <p class="essay-notes">
+                  6 → Antonella Fuga, Artists’ Techniques and Materials (Los Angeles: Getty Publications, 2006).
+                </p>
+              </div>
+              <div class="essay-col-body essay-col-body-2">
+                <p>
+                  To make watercolors, pigments are mixed in water and fixed to the support, often aided by gum
+                  arabic.<sup>6</sup> After drying, watercolor paint can be translucent. The organic pigments in
+                  watercolors
+                  are very light sensitive; to preserve a work’s longevity, it is important to make sure that it is
+                  either
+                  framed or in a case with a UV-filtering acrylic glazing to mitigate light damage.
+                  <br><br>
+                  Opaque watercolor is made by mixing pigments in water and adding chalk. The addition of white to the
+                  pigments increases the opacity of the colors.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <figure style="padding-left: 20%;">
+            <img src="assets/Essay/Bri/RISDM 34-1174.jpg" width="70%"/>
+            <figcaption>
+              <span class="figcap-title"><span class="figcap-bold">Design for Wallpaper</span>,
+                1830</span><br>
+              Tempera and graphite on paper French<br>
+              French<br>34.1174
+            </figcaption>
+          </figure>
+          </section>
+
+          <section>
+            <div class="essay-row-body">
+              <div class="essay-col-body essay-col-body-1">
+                <p class="essay-notes">
+                  7 → Max Doerner, The Materials of the Artist and Their Use in Painting (Harcourt Brace Janovich,
+                  1962).
+                </p>
+                <p class="essay-notes">
+                  8 → Fuga, Artists’ Techniques and Materials.
+                </p>
+                <p class="essay-notes">
+                  9 & 10 → Doerner, The Materials of the Artist.
+                </p>
+              </div>
+              <div class="essay-col-body essay-col-body-2">
+                <p>
+                  Traditional tempera paint is made by thoroughly mixing pigments with water (or an emulsion of water
+                  and oil)
+                  and a binder.<sup>7</sup> Oftentimes the binder for traditional tempera paint is protein based, taking
+                  the
+                  form of egg yolk or milk.<sup>8</sup> Although tempera can contain oil, it dries quickly as the water
+                  content
+                  evaporates. This makes trying different colors and values in a drawing a relatively fast process,
+                  which
+                  would have been important to the design artists.<sup>9</sup> Traditional tempera paint is not without
+                  its challenges
+                  though; if the paint contains too much fat and oil, the colors can darken, discolor, and
+                  crack.<sup>10</sup>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <figure style="padding-left: 20%;">
+              <img src="assets/Essay/Bri/RISDM 34-1180.jpg" style="width:80%" />
+              <figcaption>
+                <span class="figcap-title"><span class="figcap-bold">Design Drawing for Wallpaper</span>,
+                  1840</span><br>
+                Graphite and gouache on tracing paper<br>
+                French<br>34.1180
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <div class="essay-row-body">
+              <div class="essay-col-body essay-col-body-1">
+
+              </div>
+              <div class="essay-col-body essay-col-body-2">
+                <p>
+                  After the designer experimented and found an acceptable pattern, narrative, or scene, artisans
+                  transferred the design to transparent paper. With the aid of chalk and a steady hand, they then
+                  transposed the design onto the wooden block.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <figure style="padding-left: 20%;">
+              <img src="assets/Essay/Bri/RISDM 34-1102.jpg" style="width:60%;" />
+              <figcaption>
+                <span class="figcap-title"><span class="figcap-bold">Design for Ornament</span>,
+                  ca. 1780</span><br>
+                Tempera on oiled paper<br>
+                French<br>34.1102
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <div class="essay-row-body">
+              <div class="essay-col-body essay-col-body-1">
+                <p class="essay-notes">
+                  11 → Claude Laroque, “History and Analysis of Transparent Papers,” The Paper Conservator 20, no. 1
+                  (20024): 17–32. DOI: 10.1080/03094227.2004.9638639.
+                </p>
+              </div>
+              <div class="essay-col-body essay-col-body-2">
+                <p>
+                  Before transparent paper, artisans used oiled parchment paper to transfer the design. The process of
+                  oiling the parchment was accomplished in numerous ways, including submerging parchment in oil and
+                  hammering it to bond the oil to the fibers.<sup>11</sup>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <figure>
+              <img src="assets/Essay/Bri/RISDM 41-097.jpg" style="width:100%" />
+              <figcaption>
+                French<br>41.097
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <div class="essay-row-body">
+              <div class="essay-col-body essay-col-body-1">
+                <p class="essay-notes">
+                  12 → Roger Rowell, ed., The Chemistry of Solid Wood (Washington, D.C.: American Chemical Society,
+                  1984).
+                </p>
+              </div>
+              <div class="essay-col-body essay-col-body-2">
+                <p>
+                  After transferring the design onto the prepared woodblock, an artist would hand carve the design by
+                  following the chalk lines. Each color in a design is printed from its own block, thus each wallpaper
+                  has multiple woodblocks associated with it.
+                  <br><br>
+                  Wood is a porous material made up of organic polymers.<sup>12</sup> Depending on the type of wood, a
+                  block’s
+                  physical properties may be more vulnerable to certain environments, but overall wood is susceptible to
+                  damage when exposed to fluctuations in temperature and humidity.
+                  <br><br>
+                  To glean more information about the wood that composes the printing blocks in the Huard Collection, we
+                  took samples from discrete areas that would not affect the aesthetic whole. Choosing the sample site
+                  is an important consideration. The samples must be a certain size (in our case no larger than a
+                  quarter of an inch) to see the structure of the grain vertically, horizontally, and radially. This
+                  data can tell us the genus of wood used and with that data we can figure out the specific physical
+                  properties. As of March 2024, we are still in the process of testing the wood, but we look forward to
+                  gathering more information when testing is complete.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div id="three-col-img">
+              <img src="assets/Essay/Bri/Turner-fig12_41.100-det.jpg" style="width:100%" />
+              <img src="assets/Essay/Bri/Turner-fig11_41.098-det.jpg" style="width:100%" />
+              <img src="assets/Essay/Bri/Turner-fig10_41.103-det.jpg" style="width:100%" />
+            </div>
+            <figcaption style="max-width: 500px;">
+              ↳ Cleaning a woodblock, being careful not to disturb the trace pigment. Painter’s tape is wrapped around
+              the ferrule of the cleaning brush so that the metal will not scratch the surface of the block.
+            </figcaption>
+          </section>
+
+          <section>
+            <figure>
+              <img src="assets/Essay/Bri/RISDM 41-096.jpg" style="width:100%" />
+              <figcaption>
+                French<br>41.096
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <div class="essay-row-body">
+              <div class="essay-col-body essay-col-body-1">
+                <p class="essay-notes">
+                  13 → RISD Museum conservator Ingrid Neuman in conversation with the author, September 2023.
+                </p>
+              </div>
+              <div class="essay-col-body essay-col-body-2">
+                <p>
+                  To create finer details, some of the wooden blocks have metal elements. Composite pieces made up of
+                  different materials are especially prone to damage. Metal and wood have different physical attributes,
+                  and when exposed to the same environments and deterioration threats, these materials will have
+                  different responses. These differences often create more damage as the materials deteriorate due to
+                  their own unique instabilities, also known as inherent vice.
+                  <br><br>
+                  The metal in these blocks can become damaged by fluctuations in humidity. The oxidation of the metal
+                  can create corrosion—evidence to the naked eye that its structure is deteriorating. Depending on the
+                  type of metal, different colors of corrosion can occur. Iron produces reddish orange rust, while
+                  copper often produces a green patina but can also produce red.<sup>13</sup> Alloys, or mixtures of
+                  various metals,
+                  can have unique vulnerabilities.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <figure style="padding-left: 20%;">
+              <img src="assets/Essay/Bri/RISDM 34-935.jpg" style="width:80%" />
+              <figcaption>
+                <span class="figcap-title"><span class="figcap-bold">Wallpaper with Muses and Arabesques</span>,
+                  1799</span><br>
+                Woodblock print on paper
+                <br>Jacquemart et Bénard, manufacturer<br>
+                Paris, France; 1791–1840<br>34.935
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <div class="essay-row-body">
+              <div class="essay-col-body essay-col-body-1">
+                <p class="essay-notes">
+                  14 → “The Deterioration and Preservation of Paper: Some Essential Facts,” Deteriorate Brochure,
+                  Library of Congress, <a href="https://www.loc.gov/preservation/care/deterioratebrochure.html" target="_blank">https://www.loc.gov/preservation/care/ deterioratebrochure.html</a>.
+                </p>
+              </div>
+              <div class="essay-col-body essay-col-body-2">
+                <p>
+                  Decorators and homeowners often bought a surplus of wallpaper so that in the event of a tear or other
+                  damage, they could make the repairs that were needed. Because of this hands-on treatment, any repairs
+                  that appear to be original are an important part of the life of a wallpaper.
+                  <br><br>
+                  The Huard Collection presents a broad range of condition stability and aesthetic challenges. There is
+                  no “one size fits all” treatment, even for similar materials in the collection. Each wallpaper has its
+                  own unique history and life that it has lived. This particular wallpaper piece, The Muses Mingled with
+                  Arabesques (34.935), is undergoing treatment at Studio TKM Associates, a conservation firm located in
+                  Somerville, Massachusetts. Prior to their work, we were able to do some treatment at the museum. Many
+                  of the panels and fragments in the Huard Collection had, at some point in their history, been mounted
+                  to an acidic craft paper, pasted onto a canvas, and stretched onto wooden supports so that they could
+                  be displayed and stored vertically. We removed each panel from its frame, and many from their canvas
+                  backing. The brittle and acidic paper the wallpaper was glued to likely caused structural damage to
+                  the pieces. Acidity inherent within the cells makes the paper vulnerable.<sup>14</sup> Using dry polyurethane
+                  sponges, we cleaned many decades of soot and dust accumulation from the face and reverse of each
+                  piece. The grime we picked up with the sponges was black soot, likely from the coal-burning furnaces
+                  and fireplaces commonly used earlier in the lives of these objects. We then placed the wallpapers in
+                  acid-free folders with acid-free glassine paper separating each piece to protect the surfaces. The
+                  folders are now housed in flat file drawers.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section style="display:flex; flex-direction:row; width: 70%; padding-left: 20%;">
+            <figure>
+              <img src="assets/Essay/Bri/Turner-fig20_34.1046.jpg" style="width:100%" />
+              <figcaption>
+                ↳  Previous wallpaper storage in the museum. Samples were pasted onto paper and affixed to canvas.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="assets/Essay/Bri/Turner-fig21_34.895-cleaning.jpg" style="width:100%"/>
+              <figcaption>
+                ↳  Two sponges during the cleaning process. The top sponge is grimy with dust and other accumulations.
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <div class="essay-row-body">
+              <div class="essay-col-body essay-col-body-1">
+                <p class="essay-notes">
+                  15 → Chromium was patented in 1859. Pigments of course exist before they are patented and isolated,
+                  but they are often not widely available to artists until then.
+                </p>
+              </div>
+              <div class="essay-col-body essay-col-body-2">
+                <p>
+                  The pigments used to color wallpapers vary widely. While the paper substrate of wallpaper is made up
+                  of organic materials, including wood pulp, the pigments in the paints may not be. Pigments made from
+                  inorganic materials are produced by grinding up rocks and minerals. They are not soluble in water and
+                  are able to maintain their solid form and physical properties throughout the painting and printing
+                  process. They are also not easily damaged when exposed to light. Using x-ray fluorescence, we can
+                  learn which elements are present in various colors. This technology helps us develop conservation
+                  strategies, and it can also allow us to trace production trends. Some elements were only utilized in
+                  particular time periods while others, like lapis made from the lapis lazuli mineral, at one time could
+                  only be mined from specific countries, in this case, Afghanistan. It can be possible to hypothesize a
+                  date for a wallpaper sample based on its pigments. For example, if there is a green color in a sample,
+                  and we find large amounts of chromium in our XRF data, we might know more about this sample’s date of
+                  production, as this pigment was not isolated until 1838.<sup>15</sup>
+                  <br><br>
+                  We were able to test a number of wallpapers in the Huard Collection with generous help from the Brown
+                  University Geochemistry Department. In particular, Dr. David Murray, senior research associate and
+                  facility manager emeritus, and Jamie Pahigian, environmental chemical facility and lab coordinator,
+                  were very helpful with both their instruments, analysis, and expertise. Using a handheld Olympus XRF
+                  unit, we tested a grouping of different wallpaper fragments, borders, and sheets to find the presence
+                  of inorganic elements, specifically heavy metals, including arsenic. To learn more about these
+                  findings and the history of arsenic, please read <a href="https://publications.risdmuseum.org/issue-15-green/object-lesson-deceptive-decor-uncovering-arsenic-18th-19th-century-wallpapers-emily#" target="_blank">Emily Banas’s essay</a>.
+                </p>
+
+                  <img src="assets/Essay/Bri/Picture-1.png" style="width:60%; padding: 30px 0;" />
+
+                <p>
+                  From microscopic elements invisible to the naked eye to larger physical panels of wallpaper and all
+                  the materials in between, it is our responsibility to take care of all aspects of the Huard
+                  Collection. With the degradation process slowly marching on, we continually work to keep these objects
+                  safe for future generations. Continuing to learn more about the materials used in these works is vital
+                  to improving and evolving the ways we care for the collection.
+                </p>
+                
+              </div>
+            </div>
+          </section>
+
+          <section class="bibliography">
+            <div class="essay-row-body">
+              <div class="essay-col-body essay-col-body-1">
+              </div>
+              <div class="essay-col-body essay-col-body-2">
+            <p class="biblio-title">Bibliography</p>
+            <p>
+              Arrowsmith, James. The Paper Hanger’s Companion: A Treatise on Paper-Hanging; in which the Practical
+              Operations of the Trade are Systematically laid Down with Copious Directions Preparatory to Papering;
+              Preventions against the effect of Damp on Walls; the Various Cements and Pastes adapted to the several
+              Purposes of the Trade; Observations and Directions for the Panelling and Ornamenting of Rooms.
+              Philadelphia: Henry, Carey, Baird, 1852.<a href="https://archive.org/details/paperhangerscom01arrogoog/mode/2up" target="_blank">
+                https://archive.org/details/paperhangerscom01arrogoog/mode/2up</a>.
+              <br><br>
+              
+              Banas, Emily. “Deceptive Decor: Uncovering Arsenic in Eighteenth- and Nineteenth-Century Wallpapers,”
+              Manual: A Journal about Art and Its Making 15, “Green” (2020).
+              <a href="https://publications.risdmuseum.org/issue-15-green/object-lesson-deceptive-decor-uncovering-arsenic-18th-19th-century-wallpapers-emily" target="_blank">
+                https://publications.risdmuseum.org/issue-15-green/object-lesson-deceptive-decor-uncovering-arsenic-18th-19th-century-wallpapers-emily</a>.
+              <br><br>
+              
+              Bradshaw, William Richard. Wallpaper: Its History, Manufacture, and Decorative Importance. New York:
+              Joseph P McHugh & Co., 1891.
+              <a href="https://digital.hagley.org/PC_NK3400_B7_1891?solr_nav%5Bid%5D=4e92f533132c35b2c82f&solr_nav%5Bpage%5D=0&solr_nav%5Boffset%5D=9" target="_blank">
+                https://digital.hagley.org/PC_NK3400_B7_1891?solr_nav%5Bid%5D=4e92f533132c35b2c82f&solr_nav%5Bpage%5D=0&solr_nav%5Boffset%5D=9.
+              </a>
+              <br><br>
+              
+              Cennini, Cennino d’Andrea. The Craftsman’s Handbook. Translated by Daniel V. Thompson, Jr. New York: Dover
+              Publications, 1960.
+              <br><br>
+              
+              Caswell-Olson, Bexx, 2023, Preventing and Responding to Mold in Book and Paper Collections, [Webinar].
+              [Online]. Northeast Document and Conservation Center, August 8, 2023.
+              <br><br>
+              
+              “Conserv-O-Gram.” National Park Service, 2001.
+              <a href="https://www.nps.gov/museum/publications/conserveogram/19-24.pdf" target="_blank">
+              https://www.nps.gov/museum/publications/conserveogram/19-24.pdf</a>.
+              <br><br>
+              
+              Doerner, Max. The Materials of the Artist and Their Use in Painting. New York: Harcourt Brace Janovich,
+              1962.
+              <br><br>
+
+              Frangiamore, Catherine Lynn. “Wallpapers in Historic Preservation.” National Park Service, 1977.
+              <a href="http://npshistory.com/publications/preservation/wallpapers.pdf" target="_blank">
+                http://npshistory.com/publications/preservation/wallpapers.pdf
+              </a>.
+              <br><br>
+
+              FitzGerald, Christin, conversation with the author, November 2023.
+              <br><br>
+
+              Fuga, Antonella. Artists’ Techniques and Materials. Los Angeles: Getty Publications, 2006.
+              <br><br>
+
+              Gettens, Rutherford and George Stout. Painting Materials: A Short Encyclopedia. New York: Dover
+              Publications, 1966.
+              <br><br>
+
+              Hawksley, Lucinda. Bitten by Witch Fever: Wallpaper & Arsenic in the Nineteenth-Century Home. London:
+              Thames and Hudson, 2016.
+              <br><br>
+
+              Jones, Owen. The Grammar of Ornament. London: Day and Son, 1856.
+              <a href="https://archive.org/details/grammarornament00Jone/mode/2up?view=theater" target="_blank">
+                https://archive.org/details/grammarornament00Jone/mode/2up?view=theater</a>.
+              <br><br>
+
+              Kelly, Robert. “Historic Paperhanging Techniques: A Bibliographic Essay.” Presented in Lancaster, PA,
+              2011. <a href="https://wallpaperscholar.com/docs/HistoricPaperhangingTechniques.pdf" target="_blank">
+                https://wallpaperscholar.com/docs/HistoricPaperhangingTechniques.pdf</a>.
+              <br><br>
+              
+              Laroque, Claude. “History and Analysis of Transparent Papers.” The Paper Conservator 28, no. 1 (2004):
+              17–32. DOI: 10.1080/03094227.2004.9638639.
+              <br><br>
+             
+              Library of Congress. “The Deterioration and Preservation of Paper: Some Essential Facts.” Deteriorate
+              Brochure. Library of Congress. <a href="https://www.loc.gov/preservation/care/deterioratebrochure.html" target="_blank">
+                 https://www.loc.gov/preservation/care/deterioratebrochure.html</a>.
+              <br><br>
+
+              Mayer, Ralph. The Artist’s Handbook of Materials and Techniques. New York: Viking, 1981.
+              <br><br>
+
+              McClelland, Nancy. Historic Wall-Papers. Philadelphia and London: J.B. Lippincott Company, 1924. <a href="https://archive.org/details/historicwallpape00mccl/page/172/mode/2up?view=theater" target="_blank">
+                https://archive.org/details/historicwallpape00mccl/page/172/mode/2up?view=theater
+              </a>.
+              <br><br>
+
+              Neuman, Ingrid, conversation with the author, September 2023.
+              <br><br>
+
+              Pearce, Walter. Painting and Decorating. London: Charles Griffin & Co, 1898.
+              <a href="https://ia800607.us.archive.org/34/items/paintingdecorat00pear/paintingdecorat00pear.pdf" target="_blank">
+                https://ia800607.us.archive.org/34/items/paintingdecorat00pear/paintingdecorat00pear.pdf</a>.
+            </p>
+              </div></div>
+          </section>
+
+        </div>
+      </div>
+
+
+
+  </div>
+  </div>
+  </main>
+  <script src="p5.js"></script>
+  <script src="sketch.js"></script>
+  </div>
+</body>
+
+</html>

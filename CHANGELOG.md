@@ -7,6 +7,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.9] - 2024-04-24
+### Added
+- Tina-1.0.9: testing new home page with p5
+
 ## [1.0.8] - 2024-04-10
 ### Added
 - Tina-1.0.8: Edited explore menu to "random, pattern, color"

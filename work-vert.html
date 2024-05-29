@@ -19,6 +19,85 @@
 
 <body>
   <main>
+
+    <!-- mobile tombstone menu bar -->
+    <button class="random-button-mobile"><img src="assets/images/icons/random-icon.svg"></button>
+    <ul class="main-menu-mobile">
+      <li><button><a href="index.html"><img src="assets/images/icons/home-icon-2.svg" /></a></button></li>
+      <li><button class="menu-icon-mobile"><img src="assets/images/icons/menu-icon-2.svg" /></button></li>
+    </ul>
+    <div class="main-menu-mobile-dropdown">
+      <h2>The Life <br> of Wallpaper</h2>
+      <ul>
+        <li>
+          <button class="menu-icon"><a href="index.html">
+              <img src="assets/images/icons/home-icon-2.svg" />
+              <span class="main-menu-header">Home</span>
+            </a></button>
+          <hr>
+        </li>
+        <li>
+          <button class="menu-icon"><a href="explore.html">
+              <img src="assets/images/icons/collection-icon.svg" />
+              <span class="main-menu-header">Explore</span>
+              <br>The Catalogue
+            </a></button>
+          <hr>
+        </li>
+        <li>
+          <button class="menu-icon"><a href="explore.html">
+              <img src="assets/images/icons/watch-icon.svg" />
+              <span class="main-menu-header">Watch</span>
+              <br>The Making of Wallpaper
+            </a></button>
+          <hr>
+        </li>
+        <li>
+          <button class="menu-icon"><a href="explore.html">
+              <img src="assets/images/icons/read-icon.svg" />
+              <span class="main-menu-header">Read</span>
+              <br>Essays on Wallpaper
+            </a></button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="artwork-menu-mobile">
+      <ul class="artwork-menu-mobile-exp">
+        <div class="maker-primary">
+          <span class="maker-name">François Louis Prieur</span>, designer
+        </div>
+        <div class="maker-secondary">
+          French, active 1780–1800
+        </div>
+        </p>
+        <p>
+        <div class="maker-primary">
+          <span class="maker-name">Jean-Baptiste Réveillon</span>, manufacturer
+        </div>
+        <div class="maker-secondary">
+          Paris, France; 1725–1811
+        </div>
+        </p>
+        <p class="artwork-primary">
+          <span class="artwork-title">Arabesque Wallpaper</span>, ca. 1780
+        </p>
+        <div class="tombstone-bottom">
+          <p class="artwork-info-secondary">
+            Woodblock print on paper<br>
+            114.5 x 56 cm (45 1/16 x 22 1/16 in.)<br>
+            Mary B. Jackson Fund 34.880
+          </p>
+        </div>
+      </ul>
+      <ul class="artwork-menu-mobile-col">
+        <li><span class="gt-arrow">←</span> prev</li>
+        <li class="artwork-exp-icon"><img src="assets/images/icons/expand.svg" /></li>
+        <li>next <span class="nav-arrows">→</span></li>
+      </ul>
+      <div></div>
+    </div>
+
     <!-- SHORT tombstone menu bar -->
     <div class="artwork-menu-short">
       <div class="artwork-menu-short-R">
@@ -199,6 +278,12 @@
     $('.explore-arrow-icon').click(function () {
       $('.main-menu').toggle();
     });
+
+    $('.artwork-exp-icon').click(function () {
+      $('.artwork-menu-mobile-exp').toggle();
+    });
+
+  
 
     // close tombstone menu to open main menu
     function hideOpenTombstone() {

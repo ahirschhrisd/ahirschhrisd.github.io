@@ -11,6 +11,11 @@
 }
 
 @font-face {
+    font-family: GT-Alpina-Bold-Italic;
+    src: url('assets/fonts/GT-Alpina-Standard-Bold-Italic.woff2') format('woff2'), url('assets/fonts/GT-Alpina-Standard-Bold-Italic.woff') format('woff'), url('assets/fonts/GT-Alpina-Standard-Bold-Italic.ttf') format('truetype');
+}
+
+@font-face {
     font-family: GT-Alpina-Medium;
     src: url('assets/fonts/GT-Alpina-Standard-Medium.woff2') format('woff2'), url('assets/fonts/GT-Alpina-Standard-Medium.woff') format('woff'), url('assets/fonts/GT-Alpina-Standard-Medium.ttf') format('truetype');
 }
@@ -22,7 +27,7 @@
 
 
 @font-face {
-    font-family: GT-Alpina-Typewriter;
+    font-family: GT-Alpina-Typewriter-Italic;
     src: url('assets/fonts/GT-Alpina-Typewriter-Regular-Italic.woff2') format('woff2'), url('assets/fonts/GT-Alpina-Typewriter-Regular-Italic.woff') format('woff'), url('assets/fonts/GT-Alpina-Typewriter-Regular-Italic.ttf') format('truetype');
 }
 
@@ -32,10 +37,29 @@
 }
 
 @font-face {
-    font-family: GT-Alpina-Typewriter-Italic;
+    font-family: GT-Alpina-Typewriter;
     src: url('assets/fonts/GT-Alpina-Typewriter-Regular.woff2') format('woff2'), url('assets/fonts/GT-Alpina-Typewriter-Regular.woff') format('woff'), url('assets/fonts/GT-Alpina-Typewriter-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: GT-Alpina-Fine-Medium;
+    src: url('assets/fonts/GT-Alpina-Fine-Standard-Medium.woff2') format('woff2'), url('assets/fonts/GT-Alpina-Fine-Standard-Medium.woff') format('woff'), url('assets/fonts/GT-Alpina-Fine-Standard-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: GT-Alpina-Fine-Medium-Italic;
+    src: url('assets/fonts/GT-Alpina-Fine-Standard-Medium-Italic.woff2') format('woff2'), url('assets/fonts/GT-Alpina-Fine-Standard-Medium-Italic.woff') format('woff'), url('assets/fonts/GT-Alpina-Fine-Standard-Medium-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: GT-Alpina-Fine-Bold;
+    src: url('assets/fonts/GT-Alpina-Fine-Standard-Bold.woff2') format('woff2'), url('assets/fonts/GT-Alpina-Fine-Standard-Bold.woff') format('woff'), url('assets/fonts/GT-Alpina-Fine-Standard-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: GT-Alpina-Fine-Bold-Italic;
+    src: url('assets/fonts/GT-Alpina-Fine-Standard-Bold-Italic.woff2') format('woff2'), url('assets/fonts/GT-Alpina-Fine-Standard-Bold-Italic.woff') format('woff'), url('assets/fonts/GT-Alpina-Fine-Standard-Bold-Italic.ttf') format('truetype');
+}
 
 * {
     -moz-osx-font-smoothing: grayscale;
@@ -49,7 +73,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: black;
+    color: black !important;
 }
 
 a:hover {
@@ -57,7 +81,7 @@ a:hover {
 }
 
 a:visited {
-    color: black;
+    color: black !important;
 }
 
 a p:hover {
@@ -84,20 +108,21 @@ body {
 }
 
 #hero-container {
-    background-image: url('assets/images/RISDM34-949.jpg');
+    background-image: url('assets/images/hero/RISDM-34-1113.png');
     width: 100vw;
     height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #FFF1CE;
 }
 
 #homepage h1 {
-    font-family: 'GT-Alpina-Medium-Italic';
-    text-align: center;
+    font-family: 'GT-Alpina-Medium';
+    text-align: left;
     color: #FFF1CE;
-    font-size: 10rem;
-    line-height: 10rem;
+    font-size: 8rem;
+    line-height: 7.5rem;
     font-weight: 400;
     margin: 0;
 }
@@ -112,6 +137,21 @@ body {
     font-weight: 600;
     margin-bottom: 0;
 }
+
+#hero-title-container h2 {
+    color: #FFF1CE;
+    font-family: 'GT-Alpina-Fine-Medium';
+    font-weight: 400;
+    text-transform: none;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+#h2-italics {
+    font-family: 'GT-Alpina-Fine-Medium-Italic';
+    text-transform: none;
+}
+
 
 #homepage h3 {
     text-align: center;
@@ -142,6 +182,10 @@ body {
     width: 100%;
 }
 
+.home-menu-line {
+    display: none;
+}
+
 .home-essay-pullquotes {
     font-size: 2rem;
 }
@@ -153,14 +197,140 @@ body {
 }
 
 #home-essay-container {
-    font-size: 1.5rem;
-    margin: auto 30%;
+    font-size: 1.7rem;
+    margin: auto 10%;
+    line-height: 1.3;
+}
 
+#home-essay-section a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================== home page - essays ==========================================  */
+
+sup {
+    font-size: 1rem;
+}
+
+.essay-row-top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.essay-col-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.essay-row-body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.essay-col-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#essay-toc {
+    font-family: "Sometype Mono", monospace;
+    text-transform: uppercase;
+    padding-right: 30px;
+    min-width: 40%;
+    font-size: 1.2rem;
+}
+
+#essay-toc hr {
+    margin-bottom: 10px;
+}
+
+.essay-title {
+    font-family: 'GT-Alpina-Bold', 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.essay-intro {
+    font-size: 2.2rem;
+}
+
+.essay-notes {
+    font-family: 'GT-Alpina-Typewriter-Light', monospace;
+    font-size: .9rem;
+}
+
+.essay-col-body-1 {
+    width: 20%;
+    padding-right: 30px;
+    overflow-wrap: break-word;
+}
+
+.essay-col-body-2 {
+    width: 60%;
+}
+
+.essay-credit {
+    font-family: "Sometype Mono", monospace;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.credit-name {
+    font-family: 'GT-Alpina', 'Times New Roman', Times, serif;
+    text-transform: none;
+    font-size: 1.5rem;
+}
+
+figcaption {
+    font-size: 1rem;
+    font-family: 'GT-Alpina-Typewriter-Light', monospace;
+    padding-top: 10px;
+}
+
+.figcap-title {
+    font-size: 1.2rem;
+    font-family: 'GT-Alpina', 'Times New Roman', Times, serif;
+}
+
+.figcap-bold {
+    font-family: 'GT-Alpina-Bold', 'Times New Roman', Times, serif;
+}
+
+#img-34940 {
+    width: 700px;
+    font-family: 'GT-Alpina-Typewriter-Light', monospace;
+    font-size: 1.2rem;
+}
+
+#three-col-img {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+
+section {
+    padding-bottom: 50px;
+}
+
+.bibliography {
+    font-size: 1.2rem;
+}
+
+.biblio-title {
+    font-family: 'GT-Alpina-Bold', 'Times New Roman', Times, serif;
 }
 
 /* ========================================== explore ==========================================  */
 
+
 /* ================== menu ================== */
+.explore-menu-mobile {
+    display: none;
+}
 
 .explore-menu-bar {
     position: fixed;
@@ -231,6 +401,14 @@ body {
 
 #explore {
     background-image: url(assets/images/RISDM34-949.jpg);
+}
+
+.main-menu-mobile {
+    display: none;
+}
+
+.main-menu-mobile-dropdown {
+    display: none;
 }
 
 .main-menu {
@@ -323,6 +501,7 @@ hr {
 }
 
 /* ================== modal ================== */
+
 .modal {
     /* display: none;  */
     position: fixed;
@@ -350,7 +529,7 @@ hr {
     margin: auto;
     padding: 50px;
     border: none;
-    width: 50%;
+    width: 800px;
     padding-top: 30px;
 }
 
@@ -538,6 +717,14 @@ hr {
 
 /* ========================================== artwork page ==========================================  */
 /* ================== menu ================== */
+.random-button-mobile {
+    display: none;
+}
+
+.artwork-menu-mobile {
+    display: none;
+}
+
 .artwork-menu {
     position: fixed;
     height: 100vh;
@@ -548,7 +735,7 @@ hr {
 
 .nav-arrows {
     font-size: 1.5rem;
-    font-family: 'GT-Alpina-Medium';
+    font-family: 'GT-Alpina-Typewriter-Light';
 }
 
 .artwork-menu-R {
@@ -698,20 +885,6 @@ hr {
 .tombstone-chunk {
     padding-bottom: 20px;
 }
-
-.tombstone-col-1 {}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #container {
@@ -865,4 +1038,321 @@ hr {
     width: 100%;
     object-fit: cover;
     background-position: center;
+}
+
+/* ========================================== media query ==========================================  */
+@media screen and (max-width: 1024px) {
+
+    .modal-content {
+        width: 500px;
+    }
+
+    .artwork-menu-L {
+        width: 200px;
+    }
+
+    .artwork-menu-R {
+        margin-left: 240px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    #hero-container {
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    #hero-title-container h1 {
+        font-size: 6rem;
+        line-height: 6rem;
+        text-align: center;
+    }
+
+    #hero-title-container h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    #home-menu {
+        box-sizing: border-box;
+        width: 100vw;
+    }
+
+    #home-menu-bottom {
+        flex-direction: column;
+    }
+
+    #home-menu-bottom h2 {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    #home-menu-bottom h3 {
+        font-size: 1.5rem;
+    }
+
+    #menu-vert-top {
+        padding-top: 30px;
+    }
+
+    .home-menu-line {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        padding: 0;
+    }
+
+    .modal-content {
+        width: 100%;
+        /* height: 100vh; */
+        padding-top: 30px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .modal-content p {
+        width: 100%;
+        padding-left: 0;
+        font-size: 2rem;
+    }
+
+    .close {
+        padding-top: 30px;
+    }
+
+    /* ======================== explore page ========================== */
+
+    .explore-menu-bar {
+        display: none;
+    }
+
+
+    .explore-menu-mobile {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        z-index: 3;
+        margin: 0;
+        background-color: #FFC3C3;
+        font-family: "Sometype Mono", monospace;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .explore-menu-mobile:hover {
+        cursor: pointer;
+    }
+
+    .sometype-bold {
+        font-weight: 600;
+    }
+
+    .explore-menu-mobile-col {
+        padding: 10px;
+        max-width: 100vw;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        /* background-color: #FFC3C3; */
+        background-color: #FF7511;
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .explore-menu-mobile-col li {
+        display: flex;
+        align-items: center;
+    }
+
+    .explore-menu-mobile-col img {
+        padding-right: 5px;
+    }
+
+    .explore-menu-mobile-exp {
+        display: flex;
+        display: none;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .explore-menu-mobile-exp li {
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .explore-menu-mobile-exp hr {
+        border: .5px solid black;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .explore-menu-mobile-exp img {
+        width: 1.2rem;
+        padding-right: 5px;
+    }
+
+    .main-menu-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        background-color: #FFC3C3;
+        width: 100vw;
+        margin-top: 0;
+        padding: 10px 0;
+        overflow: hidden;
+        z-index: 3;
+    }
+
+    .main-menu-mobile img {
+        width: 1.5rem;
+    }
+
+    .main-menu-mobile-dropdown {
+        background-color: #FF7511;
+        /* padding-top: 40px; */
+        top: 40px;
+        width: 100vw;
+        padding-bottom: 10px;
+        display: flex;
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'GT-Alpina', 'Times New Roman', Times, serif;
+    }
+
+    .main-menu-mobile-dropdown ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-menu-mobile-dropdown a {
+        font-family: 'GT-Alpina', 'Times New Roman', Times, serif;
+        font-size: 1.1rem;
+    }
+
+    .main-menu-mobile-dropdown hr {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        min-width: 100%;
+        margin-right: 40px;
+    }
+
+    .main-menu-mobile-dropdown img {
+        width: 18px;
+        padding-right: 5px;
+    }
+
+    .main-menu-mobile-dropdown h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    /* ======================== artwork page ========================== */
+
+    .artwork-menu {
+        display: none;
+    }
+
+    .artwork-menu-short {
+        display: none;
+    }
+
+    .artwork-menu-mobile {
+        display: block;
+        /* flex-direction: column; */
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        width: 100vw;
+        font-family: "Sometype Mono", monospace;
+        font-size: 1.2rem;
+    }
+
+    .artwork-menu-mobile-col {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        padding-inline-start: 0;
+        background-color: #FFC3C3;
+        text-transform: uppercase;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 0;
+    }
+
+    .artwork-menu-mobile-col li {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .artwork-info-secondary {
+        padding-bottom: 40px;
+    }
+
+    .artwork-menu-mobile-exp {
+        display: flex;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #FF7511;
+        padding-top: 40px;
+        padding-inline-start: 0;
+        margin: 0;
+        align-content: center;
+        text-align: center;
+    }
+
+    .maker-secondary {
+        padding-bottom: 5px;
+    }
+
+    .artwork-primary {
+        padding-bottom: 15px;
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+
+    .artwork-menu-mobile-exp p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .random-button-mobile {
+        z-index: 3;
+        display: block;
+        background-color: #FF7511;
+        padding: 15px;
+        border-radius: 30px;
+        position: fixed;
+        top: 70px;
+        right: 20px;
+    }
+
+    .random-button-mobile img {
+        width: 25px;
+    }
+
 }
